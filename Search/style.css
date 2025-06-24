@@ -176,9 +176,7 @@ main{
 
 
 .advanced-search-container{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 34px;
+    background-color: #286090;
     text-align: left;
 }
 
@@ -200,9 +198,24 @@ main{
     min-height: 42px;
     font-weight: 500;
     color: #333;
+    margin-left: 34px;
 }
 
+.filter-container{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
+.lbl-container{
+    background-color: #681da8;
+    width: 167px;
+    margin-left: 34px;
+}
+
+/*
 .filter-container{
     float: left;
 }
