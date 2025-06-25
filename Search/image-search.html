@@ -24,10 +24,11 @@
             <img src="img/Google_2015_logo.svg" alt="Google logo">
         </section>
         <section class="main-input">
-                <form action="https://www.google.com/search">
+                <form action="https://www.google.com/search" name="f" data-submitfalse="q">
                     <div class="main-input-container">                    
                         <i class="bi bi-search"></i>
                         <input type="text" name="q" class="txtSearch">
+                        <input type="hidden" name="tbm" value="isch">
                     </div>
                     <input type="submit" value="Google Search" class="btnSearch">                    
                 </form>            

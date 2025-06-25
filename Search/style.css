@@ -49,7 +49,7 @@ header nav{
 .div-left{
     width: 100%;
     display: flex;
-    justify-content: flex-start; /*Last flex*/
+    justify-content: flex-start; /*First flex*/
 }
 
 @media screen and (max-width: 399px) {
@@ -57,6 +57,9 @@ header nav{
     width: 220px;
     }
     .nav-left-section{
+        width: 198px;
+    }
+    .btninput-container div{
         width: 200px;
     }
 }
@@ -66,7 +69,7 @@ header nav{
     width: 350px;
     }
     .nav-left-section{
-        width: 200px;
+    width: 198px;
     }
 }
 
@@ -153,7 +156,7 @@ main{
     border: none;
     background-color: #fff;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 100px;
 }
 
@@ -172,16 +175,12 @@ main{
     -webkit-box-shadow: 0 0 0px 1000px white inset; /*Fix autofill backcolor*/
 }
 
+
 /*----------------- Advanced Search*/
 
 
 .advanced-search-container{
-    background-color: #286090;
     text-align: left;
-}
-
-.advanced-search-container div{
-    margin-bottom: 10px;
 }
 
 .row{
@@ -203,37 +202,24 @@ main{
 
 .filter-container{
     width: 100%;
-    background-color: red;
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    column-gap: 5px;
+    row-gap: 30px;
+    grid-template-columns: 200px auto;
     align-items: center;
 }
 
 .lbl-container{
-    background-color: #681da8;
     width: 167px;
     margin-left: 34px;
 }
 
-/*
-.filter-container{
-    float: left;
+.txtinput-container input{
+    width: 70%;
 }
 
-.lbl-container{
-    float: left;
-    min-width: 167px;
-    height: 42px;
-    color: #222;
-    font-size: 13px;
-    line-height: 16px;
-}
-
-.txtinput-container{
-    display: inline-block;
-    min-width: 167px;
-    min-height: 41px;
-}
 
 .txtinput-container input:focus{
     outline: 1px solid #000000;
@@ -241,9 +227,35 @@ main{
     border-radius: 2px;
 }
 
+.btninput-container{
+    display: grid;
+    padding-top: 10px;
+    padding-left: 206px;
+    row-gap: 30px;
+    grid-template-columns: auto;
+    align-items: center;
+}
 
-/*
-.advanced-search-container div input{
-    width: 200px;
-    margin-left: 50px;
+.btninput-container div{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btninput-container div input{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: white;
+    background-color: #4C8EFB;
+    border: 1px solid #2F5BB7;
+}
+
+.btninput-container div input:hover{
+    background-color: #4588F7;
+}
+
+.btninput-container div input:active{
+    background-color: #376CD0;
+    border: 1px double #fff;
 }
